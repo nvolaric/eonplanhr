@@ -1,0 +1,23 @@
+<section id="novosti">
+    <h1 class="main-heading">NOVOSTI</h1>
+    <div class="container" >
+    
+    {% for post in site.posts limit:5 %}
+      <article><a href="{{ post.url | prepend:site.baseurl }}">
+          <div class="novost row" data-aos="zoom-out" >
+              <div class="col-2 text-center"><i class="fa fa-chevron-circle-right fa-2x"></i></div>
+              <div class="col-10"><time datetime="{{ post.date | date: "%Y-%m-%d %R" }}">{{ post.date | date: "%d.%m.%Y %R" }}</time><header class="main">{{ post.title }}</header></div>
+          </div>
+      </a></article>
+    {% endfor %} 
+      
+
+    {% if site.posts.size > 5 %}
+    <div class="end row justify-content-end">
+      <a href="{{ site.url }}/novosti/" class="btn btn-primary"><i class="fa fa-newspaper-o"></i> Ostale novosti</a>
+    </div>
+    {% endif %}
+       
+    
+    </div>
+</section>

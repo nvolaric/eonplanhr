@@ -1,0 +1,41 @@
+- naziv: administrativne usluge
+  icon: fa-bar-chart
+  
+- naziv: računovodstvene usluge
+  icon: fa-list
+  
+- naziv: Obračuni i evidencije iz ugovora o radu, ugovora o djelu, autorskih ugovora
+  icon: fa-newspaper-o
+  manje: da
+  
+- naziv: Izrada izvještaja za interne i eksterne potrebe
+  icon: fa-id-card-o
+  
+- naziv: Računovodstveno savjetovanje
+  icon: fa-balance-scale
+  
+- naziv: Usluge poreznog savjetovanja
+  icon: fa-pencil-square-o
+  
+- naziv: Preventivni porezni uvid
+  icon: fa-clock-o
+  
+- naziv: Porezno planiranje
+  icon: fa-calendar
+  
+- naziv: Izrada poreznih prigovora i žalbi
+  icon: fa-calendar-o
+    
+- naziv: Forenzično računovodstvo
+  icon: fa-search
+    
+- naziv: Komunikacija s državnim institucijama
+  icon: fa-bullhorn
+    
+- naziv: Rent-a računovođa
+  icon: fa-cart-arrow-down
+  
+
+
+  
+

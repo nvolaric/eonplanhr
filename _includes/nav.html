@@ -1,0 +1,30 @@
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded {% if page.url == '/' %}fixed-top{% endif %}">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="{{ site.url }}#pocetna">
+        <img src="{{ site.url }}/assets/images/eonplan-logo.png" width="152" height="40" alt="Eon Plan d.o.o.">
+      </a>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.url }}#pocetna" {% if page.layout == 'home' %} data-toggle="collapse" data-target=".navbar-collapse.show" {% endif %}><i class="fa fa-home"></i></a>
+          </li>        
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.url }}#usluge" {% if page.layout == 'home' %} data-toggle="collapse" data-target=".navbar-collapse.show" {% endif %}>USLUGE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.url }}#o-nama" {% if page.layout == 'home' %} data-toggle="collapse" data-target=".navbar-collapse.show" {% endif %}>O NAMA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link {% if page.layout == 'post' or page.layout == 'novosti-arhiva' %} active {% endif %}" href="{% if page.layout == 'home' %}{{ site.url }}#novosti {% else %} {{ site.url }}/novosti {% endif %}"  {% if page.layout == 'home' %} data-toggle="collapse" data-target=".navbar-collapse.show" {% endif %}>NOVOSTI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ site.url }}#kontakt" {% if page.layout == 'home' %} data-toggle="collapse" data-target=".navbar-collapse.show" {% endif %}>KONTAKT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>

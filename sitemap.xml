@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://www.eonplan.hr/</loc>
+  <lastmod>2017-08-01T08:15:45+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://www.eonplan.hr/#usluge</loc>
+</url>
+<url>
+  <loc>http://www.eonplan.hr/#o-nama</loc>
+</url>
+<url>
+  <loc>http://www.eonplan.hr/#novosti/</loc>
+</url>
+<url>
+  <loc>http://www.eonplan.hr/#kontakt</loc>
+</url>
+<url>
+  <loc>http://www.eonplan.hr/novosti/2017/08/01/obveza-fiskalizacije.html</loc>
+  <lastmod>2017-08-01T08:15:45+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>

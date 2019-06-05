@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    {% include head.html %}
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="arhiva"> 
+    {% include nav.html %}  
+            <div class="container-fluid">
+                <h1 class="main-heading" data-aos="zoom-out">Novosti</h1>
+            </div>
+            <div class="container arhiva-novosti">
+
+            {% for post in site.posts %}
+              <a href="{{ post.url | prepend:site.baseurl }}">
+                  <div class="novost row">
+                      <div class="col-2 text-center"><i class="fa fa-chevron-circle-right"></i></div>
+                      <div class="col-10"><p>{{ post.title }} <span style="text-align:right;">{{ post.date | date: "%d.%m.%Y %R" }}</span> </p></div>
+                  </div>
+              </a> 
+            {% endfor %}
+
+
+
+            </div>
+    
+    {% include kontakt.html %}
+    {% include js.html %}
+</body>
+</html>

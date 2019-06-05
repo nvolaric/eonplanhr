@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    {% include head.html %}
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="novosti"> 
+    {% include nav.html %}  
+            <div class="container-fluid">
+                <h1 class="main-heading" data-aos="zoom-out">{{ page.title }}<br /></h1>                
+            </div>
+            <div class="container content">
+                <p class="datum-objave">OBJAVLJENO: {{ page.date | date: "%d.%m.%Y %R" }}</p>
+                    {{ content }}
+                
+      
+      <hr />
+    <div class="end row justify-content-end">
+      <a href="{{ site.url }}/novosti/" class="btn btn-primary"><i class="fa fa-newspaper-o"></i> OSTALE NOVOSTI</a>
+    </div>
+       
+            </div>
+    
+    {% include kontakt.html %}
+    {% include js.html %}
+</body>
+</html> 

@@ -1,0 +1,31 @@
+<script src="{{ '/assets/vendor/jquery.min.js' | prepend: site.url }}"></script>
+<script src="{{ '/assets/vendor/tether.min.js' | prepend: site.url }}"></script>
+<script src="{{ '/assets/vendor/bootstrap.min.js' | prepend: site.url}}"></script>
+<script src="{{ '/assets/vendor/aos.js' | prepend: site.url }}"></script>
+<script src="{{ '/js/eonplan.js' | prepend: site.url }}"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+<script>
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+  "palette": {
+    "popup": {
+      "background": "#67819d",
+      "text": "#ffffff"
+    },
+    "button": {
+      "background": "#acbc37",
+      "text": "#ffffff"
+    }
+  },
+  "content": {
+    "message": "Radi boljeg korisničkog iskustva, ova web stranica koristi kolačiće (cookies). Klikom na gumb \"Prihvati\" suglasni ste sa korištenjem kolačića.",
+    "dismiss": "Prihvati",
+    "link": "Više"
+  }
+})});
+</script>
+{% if page.layout == 'home' %}
+<script src="{{'/assets/vendor/gmap.js' | prepend: site.url }}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDND7sDarBhopx8GtM-d5hSEjsCzubaGUI&callback=initMap" async defer></script>
+
+{% endif %}

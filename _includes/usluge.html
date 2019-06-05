@@ -1,0 +1,15 @@
+<section id="usluge">
+   <h1 class="main-heading">NAŠE USLUGE</h1>
+<div class="container">
+   <div class="row">
+       
+   		{% for usluga in site.data.usluge %}
+   		    <div class="col-12 col-sm-6 col-md-4 col-lg-3" data-aos="zoom-out">
+                <h2 {% if usluga.manje == "da" %} class="smaller-font" {% endif %}>
+                    <i class="fa {{ usluga.icon }}"></i><br />{{ usluga.naziv }}
+                </h2>
+            </div>
+   		{% endfor %}  
+    </div>
+</div>
+</section>

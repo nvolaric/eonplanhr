@@ -1,0 +1,25 @@
+<header class="site-header" role="banner" id="pocetna">
+   <div class="container">
+       
+       <div class="row">
+            <div data-aos="zoom-out" data-aos-delay="300" data-aos-duration="600" class="main-logo">
+
+            </div>
+        </div>
+       
+       <div class="row">
+            <div data-aos="flip-left" data-aos-delay="800"	class="zasto">
+                <h1>ZAŠTO NAŠE USLUGE?</h1>
+                <ul>
+                    {% for zasto in site.data.zasto %}
+                        <li><i class="fa fa-caret-right"></i> {{ zasto.naziv }}</li>
+                    {% endfor %}                 
+                </ul>
+            </div>
+        </div>
+       
+    </div>
+    
+    <div class="container" data-aos="zoom-out" ><div class="row justify-content-center"><a href="#ponuda" class="btn btn-primary btn-lg "><i class="fa fa-share"></i> ZATRAŽITE PONUDU!</a></div></div>
+
+</header>
