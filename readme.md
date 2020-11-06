@@ -2,4 +2,4 @@
 
 Website created in Jekyll.
 
-[eonplan.hr](eonplan.hr)
+[eonplan.hr](http://www.eonplan.hr)
