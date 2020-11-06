@@ -54,5 +54,4 @@ mobitel: 091 3403440
 
 
 
-e-mailom: dubravka@eonplan.hr (mailto:dubravka@eonplan.hr) 
-
+e-mailom: dubravka@eonplan.hr
